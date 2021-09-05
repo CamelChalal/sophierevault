@@ -1,0 +1,23 @@
+.container_all_mention{
+    margin-top: 50px;
+}
+
+.container_all_mention h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+ .container_mentions{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: justify;
+ }
+
+ @media (min-width: 1024px){
+    .container_mentions{
+        width: 75%;
+    }
+ }

@@ -1,0 +1,136 @@
+/* Mobile First*/
+
+/* Banniere */
+.container_banniere{
+    width: 100%;
+}
+.container_banniere img{
+    width: 100%;
+    object-fit: cover;
+}
+.titre_banniere{
+    position: relative;
+}
+.titre_banniere h1{
+    position: absolute;
+    bottom: 75px;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    width: 100%;
+}
+
+/* Contenu */
+.container_contenu{
+    margin-bottom: 40px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_photo{
+    padding: 10px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.cadre_vert{
+    display: flex;
+   
+    height: 200px;
+    border: solid 1px #6AA99E;
+    margin: 10px;
+   
+
+}
+.cadre_vert p{
+    padding: 0px 25px;
+    margin: auto;
+    text-align: center;
+    color: #6AA99E;
+    text-align: left;
+}
+.container_all_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+@media  (min-width: 768px){
+    .container_banniere img{
+        height: 200px;
+    }
+    .titre_banniere h1{
+        font-size: 45px;
+    }
+    .container_photo img{
+        height: 400px;
+    }
+}
+
+@media  (min-width: 1024px){
+   .container_contenu{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+   }
+   .container_photo{
+    width: 50%;
+    padding: 0;
+    margin: 0;
+   }
+   .container_photo img{
+    height: 250px;
+    width: 80%;
+    object-fit: cover;
+    }
+    .cadre_vert{
+        width: 47%;
+        height: 250px;
+    }
+    .container_all_text{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .contain_texte1, .contain_texte2{
+        width: 50%;
+        padding: 10px;
+    }
+    .contain_texte1 p{
+        padding-left: 30px;
+    padding-right: 20px;
+    }
+    .contain_texte2 p{
+        padding-left: 5px;
+    }
+   
+}
+
+@media  (min-width: 1200px){
+    .container_contenu{
+        margin: 30px 90px;
+    }
+    .contain_texte1 p{
+        padding: 0 30px;
+    }
+    .contain_texte2{
+        padding-right: 0;
+    }
+}
+
+@media  (min-width: 1400px){
+    .container_photo img, .cadre_vert {
+        height: 300px;
+    }
+    .container_photo img{
+        height: 300px;
+    }
+    .contain_texte1 p{
+        padding: 0 40px;
+    }
+
+}

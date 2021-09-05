@@ -1,0 +1,34 @@
+.recherche1__div a:hover{
+    color: black;
+}
+
+.recherche__divs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    margin: 50px 0;
+}
+.recherche__divs p{
+    text-align: justify;
+    padding: 0 15px;
+}
+.recherche__divs .card{
+    margin: 5px;
+}
+.recherche1__div{
+    width: 100%;
+}
+.card_resultat_recherche{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+@media screen and (min-width: 1025px) {
+    .recherche__divs{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,117 @@
+.titre_pli{
+    color: black;
+}
+.titre_pli span{
+    color:#9A9DBC ;
+}
+.titre_page_pli{
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    font-family: 'calibri';
+    font-weight: 600;
+    /* margin-top: 20px; */
+    font-size: 18px;
+}
+.titre_page_pli span{
+    color:#9A9DBC  ;
+}
+
+.carouselPli  .slick-dots {
+    left: 135px;
+}
+.carouselPli .slick-next {
+    right: 100px;
+}
+.carouselPli .slick-prev {
+    left: 105px;
+}
+
+/* .container_texte2 .titre_page_pli{
+    margin-top: 0!important;
+} */
+.container_pli4Feuilles{
+    margin-top: 90px;
+    margin-bottom: 0;
+}
+.carousel_pli4_feuille .slick-next{
+    right: 101px!important;
+    bottom: -34px !important;
+}
+.carousel_pli4_feuille .slick-prev{
+    left: 95px!important;
+    bottom: -34px !important;
+}
+
+.bckg_clr3{
+    background-color: #F3F3F3;
+    ;
+}
+.container_cardsNil .card_nil{
+    border: none!important;
+}
+.container_pli4_serre{
+    margin-bottom: -70px;
+}
+
+@media (min-width:768px) {
+    .card_nil img{
+        height: 180px;
+    }
+    .carouselPli .slick-dots{
+        left: 45% ;
+    }
+    .container_pli4_serre{
+        margin-bottom: -150px;
+    }
+    .card4serre{
+        bottom: 200px;
+    }
+    .bckg_clr3{
+        height: 250px;
+    }
+    .carousel_pli4_feuille .slick-next{
+        right: 42%!important;
+    }
+    .carousel_pli4_feuille .slick-prev{
+        left: 42%!important;
+    }
+    .carouselPli .slick-next{
+        right: 42%;
+    }
+    .carouselPli .slick-prev{
+        left: 42%;
+    }
+}
+
+@media (min-width:1024px) {
+    .card_nil img{
+        height: 250px;
+    }
+    .container_cardsNil{
+        margin-bottom: -125px;
+    }
+    .container_pli4Feuilles{
+        margin-top: 40px;
+    }
+    .carousel_pli4_feuille .slick-next{
+        right: 44%!important;
+        bottom: -39px!important;
+    }
+    .carousel_pli4_feuille .slick-prev{
+        left: 44%!important;
+        bottom: -39px!important;
+    }
+    .titre_page_pli2{
+        text-align: left!important;
+        padding: unset!important;
+        padding-bottom: 20px!important;
+    }
+}
+
+@media (min-width:1366px) {
+    .card_nil img{
+        height: 300px;
+    }
+    
+}

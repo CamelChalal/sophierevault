@@ -1,0 +1,455 @@
+/* Mobile First*/
+
+
+/* Carousel*/
+.container__carousel{
+    margin-top: 15px;
+}
+.btn_carousel{
+    width: min-content;
+    left: 28%;
+    bottom: -8px;
+}
+.btn_carousel button{
+    height: 10px!important;
+    width: 10px!important;
+    border-radius: 100%;
+}
+.btn_carousel [data-bs-target]{
+    background-color: #9A9DBC;
+}
+
+.carousel-control-next-icon{
+    background-image: url('../images/right.png');
+}
+.carousel-control-prev-icon{
+    background-image: url('../images/left.png');
+}
+.arrow_left, .arrow_right{
+    width: 7px;
+    height: 10px;
+}
+.btn_prev{
+    left: 35%;
+}
+.btn_next{
+    right: 35%;
+}
+.btn_prev, .btn_next{
+    bottom: 18px;
+    top: unset;
+    z-index: 999;
+    width: min-content;
+}
+
+.titre_home_page{
+    position: relative;
+    bottom: 65px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 15px;
+}
+
+.titre_home_page p{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.titre_home_page h1{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.carousel-item img{
+    height: 510px;
+    object-fit: cover;
+}
+
+
+/*Partie l'artiste*/
+.icon_sr, .titre_desktop{
+    display: none;
+}
+.container_artiste{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+}
+.titre_generique{
+    color: #365A75;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 0 10px 5px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.right_side{
+    padding: 10px 5px;
+}
+.left_side{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 5px;
+}
+.btn_voir_plus{
+    margin-top: 20px;
+    width: fit-content;
+    padding: 7px 14px;
+    background-color: #2D4067;
+}
+.btn_voir_plus a{
+    font-family: 'Barlow';
+    color: white;
+}
+
+/*Partie cards egypte*/
+.bckg_clr{
+    height: 170px;
+    background-color: #9A9DBC;
+}
+.container_cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    position: relative;
+    bottom: 120px;
+}
+.container_cards .card{
+    margin-bottom: 15px;
+}
+.card_contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_icon{
+    margin-bottom: 10px;
+}
+.card_contain h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+.card_contain a{
+    margin-top: 10px;
+}
+.container2{
+    height: 600px;
+}
+
+.card_home_page{
+    box-shadow: 0px 0px grey, 0px 3px 0.3em grey;
+}
+
+/*Partie aujourd'hui*/
+
+.container_aujourdhui, .container_artiste{
+    padding: 10px;
+}
+.container_aujourdhui{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+.container_actu_desktop{
+    display: none;
+}
+
+/*Partie slider actualités*/
+
+.carousel_actu .slick-slide img{
+    width: 100%;
+    padding: 5px;
+    height: 400px;
+    object-fit: cover;
+}
+.legend_card_principal{
+    bottom: 0;
+    top: unset!important;
+}
+.legend_card_principal p{
+    padding: 3px;
+}
+.titre_desktop2{
+    display: none;
+}
+@media  (min-width: 768px) {
+    .btn_carousel{
+        left: 32%;
+    }
+    .btn_prev{
+        left: 41%;
+    }
+    .btn_next{
+        right: 41%;
+       
+    }
+    .left_side{
+        padding: 10px 50px;
+    }
+    .titre_home_page{
+        bottom: 90px;
+        margin-right: 30px;
+    }
+    .titre_home_page p{
+        font-size: 22px;
+    }
+    .titre_home_page h1{
+        font-size: 38px;
+        font-weight: 600;
+    }
+    .btn_carousel{
+        margin-bottom: 2rem;
+    }
+    .btn_prev, .btn_next{
+        bottom: 34px;
+    }
+}
+
+@media  (min-width: 1024px) {
+    .container_artiste{
+        flex-direction: row-reverse;
+        align-items: end;
+        justify-content: center;
+    }
+    .titre_mobile{
+        display: none;
+    }
+   
+    .right_side{
+        height: 450px;
+    }
+    .portrait_sr img{
+        height: 400px;
+    }
+    .icon_sr{
+        display: block;
+        position: relative;
+        bottom: 190px;
+        right: 50px;
+    }
+    .icon_sr img{
+        height: 150px;
+    }
+    .left_side{
+        width: 50%;
+        padding-left: 0px;
+        padding-right: 75px;
+    }
+    .titre_desktop{
+        display: block;
+        padding: 10px 0;
+        font-family: 'Barlow';
+    }
+    .container2{
+        height: auto;
+    }
+    .container_cards{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .container_cards .card{
+        margin: 0 25px;
+    }
+    .container_aujourdhui{
+        flex-direction: row;
+        align-items: end;
+        justify-content: center;
+    }
+    .img_aujourdhui img{
+        height: 375px;
+    }
+    .bloc_text{
+        margin-left: 50px;
+        padding-right: 20px;
+    }
+    .titre_desktop{
+        padding-top: 0;
+    } 
+    .card_home_page{
+        width: 14rem!important;
+        height: 250px;
+    }
+    .container_icon{
+        padding-top: 20px;
+    }
+    .container_actu{
+        display: none;
+    }
+    .container_actu_desktop{
+        display: block;
+    }
+    .container_card_actu{
+        display: flex;
+        margin-bottom: 70px;
+    }
+    .actu_principal{
+        width: 100%;
+        margin-right: 40px;
+    }
+    .card__principal img{
+        width: 100%;
+        height: 408px;
+    }
+    .card-img-overlay{
+        top: unset;
+    }
+    .container_actu_desktop{
+        margin-top: 80px;
+    }
+    .container_actu_miniature{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .actu_miniature{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 180px 180px;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+        grid-template-areas: 
+        "one one two three"
+        "one one four five"
+    }
+
+    .card01 img{
+        height: 365px;
+    }
+    .card01{
+        grid-area: one;
+        border: none;
+    }
+    .card02{
+        grid-area: two;
+        border: none;
+        position: relative;
+    }
+    .card03{
+        grid-area: three;
+        border: none;
+        position: relative;
+    }
+    .card04{
+        grid-area: four;
+        border: none;
+        position: relative;
+    }
+    .card05{
+        grid-area: five;
+        border: none;
+        position: relative;
+    }
+
+    .card02 img  {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .card03 img  {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .card04 img  {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .card05 img  {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .container_actu_desktop{ 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    } 
+    .legend_card_principal p:first-child{
+        width: 80%;
+     padding-bottom: 10px; }
+    
+    .card_mini p{
+        font-size: 12px;
+    }
+    .card_mini a{
+        height: 100%;
+    }
+    .titre_home_page{
+        bottom: 110px;
+        margin-right: 40px;
+    }
+    .titre_home_page p{
+        font-size: 28px;
+    }
+    .titre_home_page h1{
+        font-size: 46px;
+        font-weight: 600;
+    }
+    .btn_carousel{
+        margin-bottom: 3rem;
+        left: 33%;
+    }
+    .btn_next{
+        bottom: 50px;
+        right: 43%;
+    }
+    .btn_prev{
+        bottom: 50px;
+        left: 44%;
+    }
+    .titre_desktop2{
+        display: block!important;
+    } 
+    .titre_mobile2{
+        display: none!important;
+    }
+}
+
+@media  (min-width: 1366px) {
+    .card_home_page{
+        width: 19rem!important;
+        height: 300px;
+    }
+    .card_contain h5, .card_contain a{
+        margin-top: 20px;
+    }
+    .bckg_clr{
+        height: 250px;
+    }
+    .bloc_text{
+        width: 33%;
+    }
+    .img_aujourdhui img{
+        width: 540px;
+        object-fit: contain;
+        height: 430px;
+    }
+    .actu_miniature{
+        grid-template-rows: 215px 215px;
+    }
+    .card01 img{
+        height: 435px;
+    }
+    
+}
+
+
+@media  (min-width: 1400px){
+    .actu_miniature{
+        grid-template-rows: 230px 230px;
+    }
+    .card01 img{
+        height: 465px;
+    }
+    .btn_next{
+       
+        right: 44.5%;
+    }
+}

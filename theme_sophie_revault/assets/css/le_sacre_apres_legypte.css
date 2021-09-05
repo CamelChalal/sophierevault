@@ -1,0 +1,26 @@
+/* meme css que le bleu du nil*/
+
+.box_card:nth-child(2n+0) .cardS .card_bodyNil2{
+    background-color: #F3F3F3;
+    color: black;
+}
+.box_card:nth-child(2n+0) .cardS .card_bodyNil2 h5 span{
+    color: #9A9DBC;
+}
+
+@media (min-width:768px){
+    .box_card:nth-child(2n+0) .cardS {
+        flex-direction: row-reverse;
+
+    }
+}
+
+
+@media (min-width:1024px){
+    .banniere_mobile{
+        display: none;
+    }
+    .banniere_desktop{
+        display: block;
+    }
+}
